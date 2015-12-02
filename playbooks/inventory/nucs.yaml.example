@@ -8,7 +8,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B8AEED740D12"
+        mac: "B8:AE:ED:74:0D:12"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.5"
     properties:
@@ -26,7 +26,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B8AEED740889"
+        mac: "B8:AE:ED:74:08:89"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.6"
     properties:
@@ -44,7 +44,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B8AEED755875"
+        mac: "B8:AE:ED:75:58:75"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.7"
     properties:
@@ -62,7 +62,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B8AEED740BFC"
+        mac: "B8:AE:ED:74:0B:FC"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.8"
     properties:
@@ -80,7 +80,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B8AEED73F8EA"
+        mac: "B8:AE:ED:73:F8:EA"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.9"
     properties:
@@ -98,7 +98,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B8AEED740964"
+        mac: "B8:AE:ED:74:09:64"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.10"
     properties:
@@ -116,7 +116,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B8AEED73F19D"
+        mac: "B8:AE:ED:73:F1:9D"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.11"
     properties:
@@ -134,7 +134,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B8AEED740A0D"
+        mac: "B8:AE:ED:74:0A:0D"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.12"
     properties:
@@ -152,7 +152,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B8AEED73D9AD"
+        mac: "B8:AE:ED:73:D9:AD"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.13"
     properties:
@@ -170,7 +170,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B8AEED7593C9"
+        mac: "B8:AE:ED:75:93:C9"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.14"
     properties:
@@ -188,7 +188,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B5AEED7558DB"
+        mac: "B5:AE:ED:75:58:DB"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.15"
     properties:
@@ -206,7 +206,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B8AEED7593EE"
+        mac: "B8:AE:ED:75:93:EE"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.16"
     properties:
@@ -224,7 +224,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B8AEED73E7E8"
+        mac: "B8:AE:ED:73:E7:E8"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.17"
     properties:
@@ -242,7 +242,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B8AEED73DC2F"
+        mac: "B8:AE:ED:73:DC:2F"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.18"
     properties:
@@ -260,7 +260,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B8AEED75593C"
+        mac: "B8:AE:ED:75:59:3C"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.19"
     properties:
@@ -278,7 +278,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B8AEED7558D3"
+        mac: "B8:AE:ED:75:58:D3"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.20"
     properties:
@@ -296,7 +296,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B8AEED7556FE"
+        mac: "B8:AE:ED:75:56:FE"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.21"
     properties:
@@ -314,7 +314,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B8AEED740989"
+        mac: "B8:AE:ED:74:09:89"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.22"
     properties:
@@ -332,7 +332,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B8AEED759619"
+        mac: "B8:AE:ED:75:96:19"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.23"
     properties:
@@ -350,7 +350,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B8AEED73FCA0"
+        mac: "B8:AE:ED:73:FC:A0"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.24"
     properties:
@@ -368,7 +368,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B8AEED7558C3"
+        mac: "B8:AE:ED:75:58:C3"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.25"
     properties:
@@ -386,7 +386,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B8AEED7407CC"
+        mac: "B8:AE:ED:74:07:CC"
     driver: "pxe_amt"
     ipv4_address: "192.168.2.26"
     properties:
