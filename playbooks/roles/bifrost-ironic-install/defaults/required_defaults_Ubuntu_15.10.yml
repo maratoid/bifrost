@@ -4,4 +4,4 @@ init_dest_dir: /lib/systemd/system/
 init_ext: .service
 inventory_dhcp: true
 enable_cors: true
-cors_allowed_origin: *
+#cors_allowed_origin: *
