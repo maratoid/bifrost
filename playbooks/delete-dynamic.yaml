@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  connection: local
+  name: "Delete nodes"
+  become: no
+  gather_facts: no
+- hosts: baremetal
+  name: "Delete nodes"
+  become: no
+  connection: local
+  roles:
+    - role: ironic-delete-dynamic
