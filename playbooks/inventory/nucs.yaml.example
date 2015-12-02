@@ -1,0 +1,398 @@
+---
+  nuc-01:
+    uuid: "00000000-0000-0000-0000-000000000001"
+    driver_info:
+      power:
+        amt_address: "192.168.2.5"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B8AEED740D12"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.5"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-01"
+  nuc-02:
+    uuid: "00000000-0000-0000-0000-000000000002"
+    driver_info:
+      power:
+        amt_address: "192.168.2.6"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B8AEED740889"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.6"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-02"
+  nuc-03:
+    uuid: "00000000-0000-0000-0000-000000000003"
+    driver_info:
+      power:
+        amt_address: "192.168.2.7"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B8AEED755875"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.7"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-03"
+  nuc-04:
+    uuid: "00000000-0000-0000-0000-000000000004"
+    driver_info:
+      power:
+        amt_address: "192.168.2.8"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B8AEED740BFC"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.8"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-04"
+  nuc-05:
+    uuid: "00000000-0000-0000-0000-000000000005"
+    driver_info:
+      power:
+        amt_address: "192.168.2.9"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B8AEED73F8EA"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.9"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-05"
+  nuc-06:
+    uuid: "00000000-0000-0000-0000-000000000006"
+    driver_info:
+      power:
+        amt_address: "192.168.2.10"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B8AEED740964"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.10"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-06"
+  nuc-07:
+    uuid: "00000000-0000-0000-0000-000000000007"
+    driver_info:
+      power:
+        amt_address: "192.168.2.11"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B8AEED73F19D"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.11"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-07"
+  nuc-08:
+    uuid: "00000000-0000-0000-0000-000000000008"
+    driver_info:
+      power:
+        amt_address: "192.168.2.12"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B8AEED740A0D"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.12"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-08"
+  nuc-09:
+    uuid: "00000000-0000-0000-0000-000000000009"
+    driver_info:
+      power:
+        amt_address: "192.168.2.13"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B8AEED73D9AD"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.13"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-09"
+  nuc-10:
+    uuid: "00000000-0000-0000-0000-000000000010"
+    driver_info:
+      power:
+        amt_address: "192.168.2.14"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B8AEED7593C9"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.14"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-10"
+  nuc-11:
+    uuid: "00000000-0000-0000-0000-000000000011"
+    driver_info:
+      power:
+        amt_address: "192.168.2.15"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B5AEED7558DB"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.15"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-11"
+  nuc-12:
+    uuid: "00000000-0000-0000-0000-000000000012"
+    driver_info:
+      power:
+        amt_address: "192.168.2.16"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B8AEED7593EE"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.16"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-12"
+  nuc-13:
+    uuid: "00000000-0000-0000-0000-000000000013"
+    driver_info:
+      power:
+        amt_address: "192.168.2.17"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B8AEED73E7E8"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.17"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-13"
+  nuc-14:
+    uuid: "00000000-0000-0000-0000-000000000014"
+    driver_info:
+      power:
+        amt_address: "192.168.2.18"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B8AEED73DC2F"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.18"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-14"
+  nuc-15:
+    uuid: "00000000-0000-0000-0000-000000000015"
+    driver_info:
+      power:
+        amt_address: "192.168.2.19"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B8AEED75593C"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.19"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-15"
+  nuc-16:
+    uuid: "00000000-0000-0000-0000-000000000016"
+    driver_info:
+      power:
+        amt_address: "192.168.2.20"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B8AEED7558D3"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.20"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-16"
+  nuc-17:
+    uuid: "00000000-0000-0000-0000-000000000017"
+    driver_info:
+      power:
+        amt_address: "192.168.2.21"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B8AEED7556FE"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.21"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-17"
+  nuc-18:
+    uuid: "00000000-0000-0000-0000-000000000018"
+    driver_info:
+      power:
+        amt_address: "192.168.2.22"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B8AEED740989"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.22"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-18"
+  nuc-19:
+    uuid: "00000000-0000-0000-0000-000000000019"
+    driver_info:
+      power:
+        amt_address: "192.168.2.23"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B8AEED759619"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.23"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-19"
+  nuc-20:
+    uuid: "00000000-0000-0000-0000-000000000020"
+    driver_info:
+      power:
+        amt_address: "192.168.2.24"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B8AEED73FCA0"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.24"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-20"
+  nuc-21:
+    uuid: "00000000-0000-0000-0000-000000000021"
+    driver_info:
+      power:
+        amt_address: "192.168.2.25"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B8AEED7558C3"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.25"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-21"
+  nuc-22:
+    uuid: "00000000-0000-0000-0000-000000000022"
+    driver_info:
+      power:
+        amt_address: "192.168.2.26"
+        amt_username: "admin"
+        amt_password: "NucNuc123!"
+    nics:
+      -
+        mac: "B8AEED7407CC"
+    driver: "pxe_amt"
+    ipv4_address: "192.168.2.26"
+    properties:
+      cpu_arch: "x86_64"
+      ram: "16384"
+      disk_size: "230"
+      cpus: "1"
+    name: "nuc-22"
+  
