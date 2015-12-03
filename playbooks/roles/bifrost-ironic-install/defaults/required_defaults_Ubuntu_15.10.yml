@@ -1,7 +1,4 @@
 ---
-enabled_drivers: "agent_ipmitool,agent_amttool,agent_ilo,agent_ucs"
-ironic_git_url: https://github.com/maratoid/ironic.git
-ironic_git_branch: amttool-driver-rebase
 init_template: systemd_template.j2
 init_dest_dir: /lib/systemd/system/
 init_ext: .service
