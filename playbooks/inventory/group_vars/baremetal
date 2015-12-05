@@ -6,8 +6,9 @@ ironic_url: "http://localhost:6385/"
 # to virbr0 in roles, can be overridden here.
 network_interface: "enp0s25"
 inventory_dhcp: true
-#dhcp_pool_start: 192.168.2.5
-#dhcp_pool_end: 192.168.2.26
+dhcp_lease_time: 24h
+dhcp_pool_start: 192.168.2.5
+dhcp_pool_end: 192.168.2.26
 
 # The path to the SSH key to be utilized for testing and burn-in
 # to configuration drives. When set, it should be set in both baremetal
