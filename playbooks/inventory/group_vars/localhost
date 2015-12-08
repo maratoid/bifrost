@@ -9,9 +9,6 @@ inventory_dhcp: true
 dhcp_lease_time: 24h
 dhcp_pool_start: 192.168.2.5
 dhcp_pool_end: 192.168.2.26
-ipv4_gateway: 192.168.2.1
-ipv4_subnet_mask: 255.255.255.0
-ipv4_nameserver: 8.8.8.8
 
 
 # ironic_db_password ironic user password for rabbit

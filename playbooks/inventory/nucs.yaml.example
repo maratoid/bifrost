@@ -3,7 +3,8 @@
     uuid: "00000000-0000-0000-0000-000000000001"
     driver_info:
       power:
-        amt_address: "192.168.2.5"    
+        amt_address: "192.168.2.5"
+        amt_username: "admin" 
         amt_password: "NucNuc123!"
     nics:
       -
@@ -24,6 +25,7 @@
     driver_info:
       power:
         amt_address: "192.168.2.6"
+        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
@@ -44,6 +46,7 @@
     driver_info:
       power:
         amt_address: "192.168.2.7"
+        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
@@ -64,6 +67,7 @@
     driver_info:
       power:
         amt_address: "192.168.2.8"
+        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
@@ -84,6 +88,7 @@
     driver_info:
       power:
         amt_address: "192.168.2.9" 
+        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
@@ -103,7 +108,8 @@
     uuid: "00000000-0000-0000-0000-000000000006"
     driver_info:
       power:
-        amt_address: "192.168.2.10"  
+        amt_address: "192.168.2.10"
+        amt_username: "admin"  
         amt_password: "NucNuc123!"
     nics:
       -
@@ -124,6 +130,7 @@
     driver_info:
       power:
         amt_address: "192.168.2.11" 
+        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
@@ -144,6 +151,7 @@
     driver_info:
       power:
         amt_address: "192.168.2.12" 
+        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
@@ -163,7 +171,8 @@
     uuid: "00000000-0000-0000-0000-000000000009"
     driver_info:
       power:
-        amt_address: "192.168.2.13" 
+        amt_address: "192.168.2.13"
+        amt_username: "admin" 
         amt_password: "NucNuc123!"
     nics:
       -
@@ -184,6 +193,7 @@
     driver_info:
       power:
         amt_address: "192.168.2.14" 
+        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
@@ -204,6 +214,7 @@
     driver_info:
       power:
         amt_address: "192.168.2.15"
+        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
@@ -223,7 +234,8 @@
     uuid: "00000000-0000-0000-0000-000000000012"
     driver_info:
       power:
-        amt_address: "192.168.2.16"  
+        amt_address: "192.168.2.16"
+        amt_username: "admin"  
         amt_password: "NucNuc123!"
     nics:
       -
@@ -243,7 +255,8 @@
     uuid: "00000000-0000-0000-0000-000000000013"
     driver_info:
       power:
-        amt_address: "192.168.2.17"  
+        amt_address: "192.168.2.17"
+        amt_username: "admin"  
         amt_password: "NucNuc123!"
     nics:
       -
@@ -263,7 +276,8 @@
     uuid: "00000000-0000-0000-0000-000000000014"
     driver_info:
       power:
-        amt_address: "192.168.2.18"  
+        amt_address: "192.168.2.18" 
+        amt_username: "admin" 
         amt_password: "NucNuc123!"
     nics:
       -
@@ -284,6 +298,7 @@
     driver_info:
       power:
         amt_address: "192.168.2.19"
+        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
@@ -304,6 +319,7 @@
     driver_info:
       power:
         amt_address: "192.168.2.20"
+        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
@@ -324,6 +340,7 @@
     driver_info:
       power:
         amt_address: "192.168.2.21" 
+        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
@@ -344,6 +361,7 @@
     driver_info:
       power:
         amt_address: "192.168.2.22" 
+        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
@@ -364,6 +382,7 @@
     driver_info:
       power:
         amt_address: "192.168.2.23" 
+        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
@@ -384,6 +403,7 @@
     driver_info:
       power:
         amt_address: "192.168.2.24" 
+        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
@@ -404,6 +424,7 @@
     driver_info:
       power:
         amt_address: "192.168.2.25" 
+        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
@@ -424,6 +445,7 @@
     driver_info:
       power:
         amt_address: "192.168.2.26" 
+        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
