@@ -3,13 +3,12 @@
     uuid: "00000000-0000-0000-0000-000000000001"
     driver_info:
       power:
-        amt_address: "192.168.2.5"
-        amt_username: "admin" 
+        amt_address: "192.168.2.5"    
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B8:AE:ED:74:0D:12"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.5"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
@@ -25,12 +24,11 @@
     driver_info:
       power:
         amt_address: "192.168.2.6"
-        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B8:AE:ED:74:08:89"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.6"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
@@ -46,12 +44,11 @@
     driver_info:
       power:
         amt_address: "192.168.2.7"
-        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B8:AE:ED:75:58:75"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.7"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
@@ -67,12 +64,11 @@
     driver_info:
       power:
         amt_address: "192.168.2.8"
-        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B8:AE:ED:74:0B:FC"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.8"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
@@ -88,12 +84,11 @@
     driver_info:
       power:
         amt_address: "192.168.2.9" 
-        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B8:AE:ED:73:F8:EA"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.9"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
@@ -108,13 +103,12 @@
     uuid: "00000000-0000-0000-0000-000000000006"
     driver_info:
       power:
-        amt_address: "192.168.2.10"
-        amt_username: "admin"  
+        amt_address: "192.168.2.10"  
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B8:AE:ED:74:09:64"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.10"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
@@ -130,12 +124,11 @@
     driver_info:
       power:
         amt_address: "192.168.2.11" 
-        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B8:AE:ED:73:F1:9D"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.11"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
@@ -151,12 +144,11 @@
     driver_info:
       power:
         amt_address: "192.168.2.12" 
-        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B8:AE:ED:74:0A:0D"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.12"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
@@ -171,13 +163,12 @@
     uuid: "00000000-0000-0000-0000-000000000009"
     driver_info:
       power:
-        amt_address: "192.168.2.13"
-        amt_username: "admin" 
+        amt_address: "192.168.2.13" 
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B8:AE:ED:73:D9:AD"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.13"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
@@ -193,12 +184,11 @@
     driver_info:
       power:
         amt_address: "192.168.2.14" 
-        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B8:AE:ED:75:93:C9"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.14"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
@@ -214,12 +204,11 @@
     driver_info:
       power:
         amt_address: "192.168.2.15"
-        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B5:AE:ED:75:58:DB"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.15"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
@@ -234,13 +223,12 @@
     uuid: "00000000-0000-0000-0000-000000000012"
     driver_info:
       power:
-        amt_address: "192.168.2.16"
-        amt_username: "admin"  
+        amt_address: "192.168.2.16"  
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B8:AE:ED:75:93:EE"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.16"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
@@ -255,13 +243,12 @@
     uuid: "00000000-0000-0000-0000-000000000013"
     driver_info:
       power:
-        amt_address: "192.168.2.17"
-        amt_username: "admin"  
+        amt_address: "192.168.2.17"  
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B8:AE:ED:73:E7:E8"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.17"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
@@ -276,13 +263,12 @@
     uuid: "00000000-0000-0000-0000-000000000014"
     driver_info:
       power:
-        amt_address: "192.168.2.18" 
-        amt_username: "admin" 
+        amt_address: "192.168.2.18"  
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B8:AE:ED:73:DC:2F"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.18"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
@@ -298,12 +284,11 @@
     driver_info:
       power:
         amt_address: "192.168.2.19"
-        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B8:AE:ED:75:59:3C"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.19"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
@@ -319,12 +304,11 @@
     driver_info:
       power:
         amt_address: "192.168.2.20"
-        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B8:AE:ED:75:58:D3"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.20"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
@@ -340,12 +324,11 @@
     driver_info:
       power:
         amt_address: "192.168.2.21" 
-        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B8:AE:ED:75:56:FE"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.21"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
@@ -361,12 +344,11 @@
     driver_info:
       power:
         amt_address: "192.168.2.22" 
-        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B8:AE:ED:74:09:89"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.22"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
@@ -382,12 +364,11 @@
     driver_info:
       power:
         amt_address: "192.168.2.23" 
-        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B8:AE:ED:75:96:19"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.23"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
@@ -403,12 +384,11 @@
     driver_info:
       power:
         amt_address: "192.168.2.24" 
-        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B8:AE:ED:73:FC:A0"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.24"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
@@ -424,12 +404,11 @@
     driver_info:
       power:
         amt_address: "192.168.2.25" 
-        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B8:AE:ED:75:58:C3"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.25"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
@@ -445,12 +424,11 @@
     driver_info:
       power:
         amt_address: "192.168.2.26" 
-        amt_username: "admin"
         amt_password: "NucNuc123!"
     nics:
       -
         mac: "B8:AE:ED:74:07:CC"
-    driver: "pxe_amt"
+    driver: "agent_amttool"
     ipv4_address: "192.168.2.26"
     ipv4_gateway: 192.168.2.1
     ipv4_subnet_mask: 255.255.255.0
