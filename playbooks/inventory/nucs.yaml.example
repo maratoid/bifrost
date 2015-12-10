@@ -9,9 +9,6 @@
     nics:
       -
         mac: "B8:AE:ED:74:0D:12"
-    instance_info:
-      image_source: "http://uec-images.ubuntu.com/releases/14.04/release/ubuntu-14.04-server-cloudimg-amd64-disk1.img"
-      image_checksum: "fd02c887dbf1f24cb2ca8028178156423668fbd1"
     driver: "agent_amt"
     ipv4_address: "192.168.2.5"
     ipv4_gateway: 192.168.2.1
@@ -33,9 +30,6 @@
     nics:
       -
         mac: "B8:AE:ED:74:08:89"
-    instance_info:
-      image_source: "http://uec-images.ubuntu.com/releases/14.04/release/ubuntu-14.04-server-cloudimg-amd64-disk1.img"
-      image_checksum: "fd02c887dbf1f24cb2ca8028178156423668fbd1"
     driver: "agent_amt"
     ipv4_address: "192.168.2.6"
     ipv4_gateway: 192.168.2.1
@@ -57,9 +51,6 @@
     nics:
       -
         mac: "B8:AE:ED:75:58:75"
-    instance_info:
-      image_source: "http://uec-images.ubuntu.com/releases/14.04/release/ubuntu-14.04-server-cloudimg-amd64-disk1.img"
-      image_checksum: "fd02c887dbf1f24cb2ca8028178156423668fbd1"
     driver: "agent_amt"
     ipv4_address: "192.168.2.7"
     ipv4_gateway: 192.168.2.1
@@ -81,9 +72,6 @@
     nics:
       -
         mac: "B8:AE:ED:74:0B:FC"
-    instance_info:
-      image_source: "http://uec-images.ubuntu.com/releases/14.04/release/ubuntu-14.04-server-cloudimg-amd64-disk1.img"
-      image_checksum: "fd02c887dbf1f24cb2ca8028178156423668fbd1"
     driver: "agent_amt"
     ipv4_address: "192.168.2.8"
     ipv4_gateway: 192.168.2.1
@@ -105,9 +93,6 @@
     nics:
       -
         mac: "B8:AE:ED:73:F8:EA"
-    instance_info:
-      image_source: "http://uec-images.ubuntu.com/releases/14.04/release/ubuntu-14.04-server-cloudimg-amd64-disk1.img"
-      image_checksum: "fd02c887dbf1f24cb2ca8028178156423668fbd1"
     driver: "agent_amt"
     ipv4_address: "192.168.2.9"
     ipv4_gateway: 192.168.2.1
@@ -129,9 +114,6 @@
     nics:
       -
         mac: "B8:AE:ED:74:09:64"
-    instance_info:
-      image_source: "http://uec-images.ubuntu.com/releases/14.04/release/ubuntu-14.04-server-cloudimg-amd64-disk1.img"
-      image_checksum: "fd02c887dbf1f24cb2ca8028178156423668fbd1"
     driver: "agent_amt"
     ipv4_address: "192.168.2.10"
     ipv4_gateway: 192.168.2.1
@@ -153,9 +135,6 @@
     nics:
       -
         mac: "B8:AE:ED:73:F1:9D"
-    instance_info:
-      image_source: "http://uec-images.ubuntu.com/releases/14.04/release/ubuntu-14.04-server-cloudimg-amd64-disk1.img"
-      image_checksum: "fd02c887dbf1f24cb2ca8028178156423668fbd1"
     driver: "agent_amt"
     ipv4_address: "192.168.2.11"
     ipv4_gateway: 192.168.2.1
@@ -177,9 +156,6 @@
     nics:
       -
         mac: "B8:AE:ED:74:0A:0D"
-    instance_info:
-      image_source: "http://uec-images.ubuntu.com/releases/14.04/release/ubuntu-14.04-server-cloudimg-amd64-disk1.img"
-      image_checksum: "fd02c887dbf1f24cb2ca8028178156423668fbd1"
     driver: "agent_amt"
     ipv4_address: "192.168.2.12"
     ipv4_gateway: 192.168.2.1
@@ -201,9 +177,6 @@
     nics:
       -
         mac: "B8:AE:ED:73:D9:AD"
-    instance_info:
-      image_source: "http://uec-images.ubuntu.com/releases/14.04/release/ubuntu-14.04-server-cloudimg-amd64-disk1.img"
-      image_checksum: "fd02c887dbf1f24cb2ca8028178156423668fbd1"
     driver: "agent_amt"
     ipv4_address: "192.168.2.13"
     ipv4_gateway: 192.168.2.1
