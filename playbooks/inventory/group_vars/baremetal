@@ -44,5 +44,7 @@ http_boot_folder: /httpboot
 # to both the baremetal and localhost groups.  If the file is already on
 # disk, then the image generation will not take place, otherwise an image
 # will be generated using diskimage-builder.
+dib_os_element: ubuntu
+dib_os_release: trusty
 deploy_image_filename: "deployment_image.qcow2"
 deploy_image: "{{http_boot_folder}}/{{deploy_image_filename}}"

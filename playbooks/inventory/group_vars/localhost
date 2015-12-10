@@ -38,7 +38,7 @@ nginx_port: 8080
 ipa_kernel: "{{http_boot_folder}}/coreos_production_pxe.vmlinuz"
 ipa_ramdisk: "{{http_boot_folder}}/coreos_production_pxe_image-oem.cpio.gz"
 ipa_kernel_url: "http://{{ hostvars[inventory_hostname]['ansible_' + network_interface]['ipv4']['address'] }}:{{nginx_port}}/coreos_production_pxe.vmlinuz"
-# ipa_ramdisk_url: "http://{{ hostvars[inventory_hostname]['ansible_' + network_interface]['ipv4']['address'] }}:{{nginx_port}}/coreos_production_pxe_image-oem.cpio.gz"
+ipa_ramdisk_url: "http://{{ hostvars[inventory_hostname]['ansible_' + network_interface]['ipv4']['address'] }}:{{nginx_port}}/coreos_production_pxe_image-oem.cpio.gz"
 
 # The http_boot_folder defines the root folder for the webserver.
 # If this setting is changed, it must be applied to both the baremetal
@@ -51,6 +51,8 @@ http_boot_folder: /httpboot
 # to both the baremetal and localhost groups.  If the file is already on
 # disk, then the image generation will not take place, otherwise an image
 # will be generated using diskimage-builder.
+dib_os_element: ubuntu
+dib_os_release: trusty
 deploy_image_filename: "deployment_image.qcow2"
 deploy_image: "{{http_boot_folder}}/{{deploy_image_filename}}"
 
@@ -68,4 +70,4 @@ create_ipa_image: false
 # Dnsmasq default route for clients. If not defined, dnsmasq will push to
 # clients as default route the same IP of the dnsmasq server.
 # Default: undefined
-# dnsmasq_router: {{ ipv4_gateway }}
+dnsmasq_router: {{ ipv4_gateway }}
