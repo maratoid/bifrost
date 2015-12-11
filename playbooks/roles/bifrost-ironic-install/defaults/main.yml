@@ -41,9 +41,9 @@ include_dhcp_server: true
 dib_git_url: https://git.openstack.org/openstack/diskimage-builder
 ironicclient_git_url: https://git.openstack.org/openstack/python-ironicclient
 shade_git_url: https://git.openstack.org/openstack-infra/shade
-# ironic_git_url: https://git.openstack.org/openstack/ironic
-ironic_git_url: https://github.com/maratoid/ironic.git
-ironic_git_branch: amttool-amtc
+ironic_git_url: https://git.openstack.org/openstack/ironic
+#ironic_git_url: https://github.com/maratoid/ironic.git
+#ironic_git_branch: amttool-amtc
 mysql_username: "root"
 mysql_password: ""
 disable_dnsmasq_dns: False
@@ -52,8 +52,8 @@ ironicclient_git_folder: /opt/stack/python-ironicclient
 shade_git_folder: /opt/stack/shade
 dib_git_folder: /opt/stack/diskimage-builder
 # Comma-separated list, in the format of a string, of drivers that are enabled.
-# enabled_drivers: "agent_ipmitool,pxe_amt,agent_ilo,agent_ucs,agent_amt"
-enabled_drivers: "agent_ipmitool,agent_amttool,pxe_amt,agent_ilo,agent_ucs,agent_amt"
+enabled_drivers: "agent_ipmitool,pxe_amt,agent_ilo,agent_ucs,agent_amt"
+# enabled_drivers: "agent_ipmitool,agent_amttool,pxe_amt,agent_ilo,agent_ucs,agent_amt"
 # DHCP pool for requests -- ignored if inventory_dhcp is set to True
 # since IP allocation will be static.
 dhcp_pool_start: 192.168.1.200
