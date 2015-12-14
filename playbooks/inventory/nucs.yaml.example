@@ -20,24 +20,3 @@
       disk_size: "250"
       cpus: "1"
     name: "nuc-01"
-  nuc-02:
-    uuid: "00000000-0000-0000-0000-000000000002"
-    driver_info:
-      power:
-        amt_address: "192.168.2.6"
-        amt_username: "admin"
-        amt_password: "NucNuc123!"
-    nics:
-      -
-        mac: "B8:AE:ED:74:08:89"
-    driver: "agent_amt"
-    ipv4_address: "192.168.2.6"
-    ipv4_gateway: 192.168.2.1
-    ipv4_subnet_mask: 255.255.255.0
-    ipv4_nameserver: 8.8.8.8
-    properties:
-      cpu_arch: "x86_64"
-      ram: "16384"
-      disk_size: "250"
-      cpus: "1"
-    name: "nuc-02"
