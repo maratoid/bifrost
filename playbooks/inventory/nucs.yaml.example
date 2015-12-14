@@ -218,7 +218,7 @@
         amt_password: "NucNuc123!"
     nics:
       -
-        mac: "B5:AE:ED:75:58:DB"
+        mac: "B8:AE:ED:75:58:DB"
     driver: "agent_amt"
     ipv4_address: "192.168.2.15"
     ipv4_gateway: 192.168.2.1
