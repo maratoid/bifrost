@@ -1,7 +1,6 @@
 ---
 - hosts: baremetal
   name: "Instal docker on all hosts"
-  connection: local
   sudo: yes
   roles:
     - role: angstwad.docker_ubuntu
