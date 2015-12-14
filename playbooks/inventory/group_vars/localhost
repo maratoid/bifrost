@@ -9,7 +9,7 @@ inventory_dhcp: true
 dhcp_lease_time: 24h
 dhcp_pool_start: 192.168.2.5
 dhcp_pool_end: 192.168.2.26
-
+enabled_drivers: "agent_ipmitool,pxe_amt,agent_ilo,agent_ucs,agent_amt"
 
 # ironic_db_password ironic user password for rabbit
 ironic_db_password: aSecretPassword473z
