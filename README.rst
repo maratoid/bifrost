@@ -92,6 +92,11 @@ The installation is split into two parts.
 The first part is a bash script which lays the basic groundwork of installing
 Ansible itself.
 
+Bifrost source code should be pulled directly from git first::
+
+  git clone https://git.openstack.org/openstack/bifrost.git
+  cd bifrost
+
 Edit ``./playbooks/inventory/group_vars/*`` to match your environment. The
 localhost file is intended for steps executed upon the localhost, such as
 installation, or image generation.  The baremetal file is geared for steps
@@ -159,7 +164,7 @@ default as it can be an unexpected surprise for a new user that their test
 node is unusable for however long it takes for the disks to be wiped.
 
 If you wish to enable cleaning, you can achieve this by passing the option
-``-e cleaning=true`` to the command line or executing the command below.::
+``-e cleaning=true`` to the command line or executing the command below::
 
   ansible-playbook -K -vvvv -i inventory/localhost install.yaml -e cleaning=true
 
@@ -183,7 +188,8 @@ to a local ironic installation operating in noauth mode.
 Hardware enrollment
 ===================
 
-The following requirements are installed during the `Installation`_ step above:
+The following requirements are installed during the `Installation`_ step
+above:
 
 - openstack-infra/shade library
 - openstack-infra/os-client-config
@@ -203,7 +209,8 @@ parser will convert and provide to Ansible.
 
 In order to use, you will need to define the environment variable
 ``BIFROST_INVENTORY_SOURCE`` to equal a file, which then allows you to
-execute Ansible utilizing the ``bifrost_inventory.py`` file as the data source.
+execute Ansible utilizing the ``bifrost_inventory.py`` file as the data
+source.
 
 Conversion from CSV to JSON formats
 -----------------------------------
@@ -422,8 +429,11 @@ Custom IPA images
 Bifrost supports the ability for a user to build a custom IPA ramdisk
 utilizing the diskimage-builder element "ironic-agent".  In order to utilize
 this feature, the ``download_ipa`` setting must be set to ``false`` and the
-create_ipa_image must be set to "true".  By default, the playbook will build
-a Debian based IPA image, if a pre-existing IPA image is not present on disk.
+create_ipa_image must be set to "true".  By default, the install playbook will
+build a Debian jessie based IPA image, if a pre-existing IPA image is not
+present on disk.  If you wish to explicitly set a specific release to be
+passed to diskimage-create, then the setting ``dib_os_release`` can be set in
+addition to ``dib_os_element``.
 
 If you wish to include an extra element into the IPA disk image, such as a
 custom hardware manager, you can pass the variable ``ipa_extra_dib_elements``

@@ -2,9 +2,7 @@
 set -e
 
 ANSIBLE_GIT_URL=${ANSIBLE_GIT_URL:-https://github.com/ansible/ansible.git}
-# Note(TheJulia): Presently defaulting to stable-1.9, although the syntax
-# is compatible with the Ansible devel branch as of 20150923.
-ANSIBLE_GIT_BRANCH=${ANSIBLE_GIT_BRANCH:-stable-1.9}
+ANSIBLE_GIT_BRANCH=${ANSIBLE_GIT_BRANCH:-stable-2.0}
 
 if [ -x '/usr/bin/apt-get' ]; then
     if ! $(gcc -v &>/dev/null); then
@@ -42,7 +40,7 @@ fi
 # older versions of pip are incompatible with
 # requests, one of our indirect dependencies (bug 1459947).
 wget -O /tmp/get-pip.py https://bootstrap.pypa.io/get-pip.py
-sudo python /tmp/get-pip.py
+sudo -H -E python /tmp/get-pip.py
 
 sudo -H -E pip install -r "$(dirname $0)/../requirements.txt"
 

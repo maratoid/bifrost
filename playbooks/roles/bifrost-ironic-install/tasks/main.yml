@@ -29,6 +29,7 @@
 - name: Include OS version-specific defaults
   include_vars: "{{ item }}"
   with_first_found:
+    - "../defaults/required_defaults_{{ ansible_distribution }}_{{ansible_distribution_release }}.yml"
     - "../defaults/required_defaults_{{ ansible_distribution }}_{{ ansible_distribution_version }}.yml"
     - "../defaults/dummy-defaults.yml"
 - name: "Update Package Cache"
@@ -104,8 +105,6 @@
   file: name=/etc/ironic state=directory owner=ironic group=ironic mode=0755
 - name: "Generate ironic Configuration"
   include: ironic_config.yml
-- name: "Place ironic IPA Agent PXE configuration file"
-  template: src=agent_config.template.j2 dest=/etc/ironic/agent_config.template owner=ironic group=ironic mode=0644
 - name: "Copy policy.json to /etc/ironic"
   copy: src="{{ ironic_git_folder }}/etc/ironic/policy.json" dest=/etc/ironic/ owner=ironic group=ironic mode=0644
 - name: "Create ironic DB Schema"
@@ -138,10 +137,19 @@
 - name: "Create authorized_keys file for ironic user"
   command: cp -p /home/ironic/.ssh/id_rsa.pub /home/ironic/.ssh/authorized_keys
   when: testing == true
+- name: "Create service folder if systemd template is defined"
+  file:
+    path: "{{ init_dest_dir }}"
+    state: directory
+    mode: 0755
+  when: init_template == 'systemd_template.j2'
+- name: "Install ironic-inspector to permit use of inspection interface"
+  include: inspector_install.yml
+  when: enable_inspector | bool
 - name: "Get ironic-api & ironic-conductor install location"
   shell: echo $(dirname $(which ironic-api))
   register: ironic_install_prefix
-- name: "Place services"
+- name: "Place ironic services"
   template: src={{ init_template }} dest={{ init_dest_dir }}{{item.service_name}}{{ init_ext }} owner=root group=root
   with_items:
     - { service_path: "{{ ironic_install_prefix.stdout }}", service_name: 'ironic-api', username: 'ironic', args: '--config-file /etc/ironic/ironic.conf'}

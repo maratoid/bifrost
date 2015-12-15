@@ -2,4 +2,3 @@
 init_template: systemd_template.j2
 init_dest_dir: /lib/systemd/system/
 init_ext: .service
-enable_cors: true

@@ -67,8 +67,15 @@ dhcp_lease_time: 12h
 Alternatively, a user can choose to perform static DHCP assignments to nodes.
 This can be enabled by setting the ``inventory_dhcp`` setting to ``true``.
 This will result in the ``dhcp_pool_start`` and ``dhcp_pool_end`` settings
-being ignored and the ``ipv4_address`` setting being bound to the first
-listed MAC address for the node.
+only being used to define the range of valid ips to be accepted, and the
+``ipv4_address`` setting being bound to the first listed MAC address for
+the node.
+If you choose to use the static DHCP assignments, you may need to set
+the ``dhcp_static_mask`` setting according to your needs. It defaults to
+a /24 range.
+In the case of static inventory, please also consider to set the
+``dhcp_lease_time`` setting to infinite, to avoid unnecessary refreshes
+of ips.
 
 In case your HW needs a kernel option to boot, set the following variable:
 
@@ -102,8 +109,8 @@ Not all of the possible files for a given distribution/version combination
 need to exist. The recommended approach for adding a new variable is:
 
 - Put the variable in the most generic set of defaults to which it applies:
-  for example, if a given variable is applicable to all Debian-family OSes,
-  put it in required_defaults_Debian.yml
+  for example, if a given variable is applicable to all Debian-family
+  operating systems, put it in required_defaults_Debian.yml
 
 - Variables specified in the more specific files will be used to override
   values in the more generic defaults files.
@@ -128,6 +135,51 @@ enable_cors_credential_support: Boolean value, default false.  This variable
                                 authentication.  Since bifrost makes use of
                                 noauth mode, this realistically should not
                                 be modified.
+
+### Hardware Inspection Support
+
+Bifrost also supports the installation of ironic-inspector in standalone
+mode, which enables the user to allow for identification of the system
+properties via a workflow.
+
+enable_inspector: Boolean value, default false.  Set this value to true to
+                  install ironic-inspector.
+
+inspector_auth: Sets ironic-inspector's authentication method. Possible values
+                are `keystone` and `noauth`. `noauth` is recommended since
+                bifrost by default installs ironic as standalone without
+                keystone. The default value is `noauth`.
+
+inspector_debug: Boolean value, default true. Enables debug level logging
+                 for inspector. Note that this default may change in
+                 future.
+
+inspector_manage_firewall: Boolean value, default false. Controls whether
+                           ironic-inspector should manage the firewall
+                           rules of the host. Bifrost's installation playbook
+                           adds the rule to permit the callback traffic,
+                           so you shouldn't need to enable this.
+
+ironic_auth_strategy: Sets the `auth_strategy` ironic-inspector should use
+                      with ironic.  Possible values are `noauth` and
+                      `keystone`. The default value is `noauth`.
+
+inspector_data_dir: Base path for ironic-inspector's temporary data and log
+                    files. The default location is
+                    `/opt/stack/ironic-inspector/var`.
+
+inspector_port_addition: Defines which MAC addresses to add as ports during
+                         introspection. Possible values are `all`, `active`,
+                         and `pxe`. The default value is `pxe`.
+
+inspector_keep_ports: Defines which ports on a node to keep after
+                      introspection. Possible values are `all`, `present`,
+                      and `added`. The default value is `present`.
+
+inspector_store_ramdisk_logs: Boolean value, default true. Controls if the
+                              inspector agent will retain logs from the
+                              ramdisk that called the inspector service.
+
 
 Notes
 -----
