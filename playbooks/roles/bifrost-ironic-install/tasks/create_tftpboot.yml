@@ -24,6 +24,7 @@
   copy: src=tftpboot-map-file dest=/tftpboot/map-file owner=ironic group=ironic
 - name: "Disable service tftpd-hpa"
   service: name=tftpd-hpa state=stopped enabled=no
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
 - name: "Set pxelinux.0 source (for Ubuntu >=14.10)"
   set_fact:
      syslinux_tftp_dir: '/usr/lib/PXELINUX'

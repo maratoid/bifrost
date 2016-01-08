@@ -9,7 +9,7 @@ inventory_dhcp: true
 dhcp_lease_time: 24h
 dhcp_pool_start: 192.168.2.5
 dhcp_pool_end: 192.168.2.26
-enabled_drivers: "agent_ipmitool,pxe_amt,agent_ilo,agent_ucs,agent_amt"
+enabled_drivers: "agent_ipmitool,agent_ilo,agent_ucs,agent_amt"
 
 # The path to the SSH key to be utilized for testing and burn-in
 # to configuration drives. When set, it should be set in both baremetal
@@ -24,7 +24,7 @@ testing_user: root
 # The default port to download files via.  Required for IPA URL generation.
 # Presently the defaults are located in the roles, however if changed both
 # the localhost and baremetal group files must be updated.
-# nginx_port: 8080
+nginx_port: 8080
 
 # IPA Image parameters.  If these are changed, they must be changed in
 # Both localhost and baremetal groups.  Presently the defaults
