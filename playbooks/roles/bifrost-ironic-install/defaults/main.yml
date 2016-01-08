@@ -20,11 +20,18 @@ ci_testing: false
 network_interface: "virbr0"
 ans_network_interface: "{{ network_interface | replace('-', '_') }}"
 
+# Normally this would setting would be http in a bifrost installation
+# without TLS. This setting allows a user to override the setting in case
+# the local webserver has been updated to support HTTPS.
+# Note: Users wishing to leverage HTTPS should reference the iPXE
+# documentation at http://ipxe.org/crypto
+ipa_file_protocol: "http"
+
 ipa_kernel: "{{http_boot_folder}}/ipa.vmlinuz"
 ipa_ramdisk: "{{http_boot_folder}}/ipa.initramfs"
-ipa_kernel_url: "http://{{ hostvars[inventory_hostname]['ansible_' + ans_network_interface]['ipv4']['address'] }}:{{nginx_port}}/ipa.vmlinuz"
+ipa_kernel_url: "{{ ipa_file_protocol }}://{{ hostvars[inventory_hostname]['ansible_' + ans_network_interface]['ipv4']['address'] }}:{{nginx_port}}/ipa.vmlinuz"
 ipa_kernel_upstream_url: http://tarballs.openstack.org/ironic-python-agent/coreos/files/coreos_production_pxe.vmlinuz
-ipa_ramdisk_url: "http://{{ hostvars[inventory_hostname]['ansible_' + ans_network_interface]['ipv4']['address'] }}:{{nginx_port}}/ipa.initramfs"
+ipa_ramdisk_url: "{{ ipa_file_protocol }}://{{ hostvars[inventory_hostname]['ansible_' + ans_network_interface]['ipv4']['address'] }}:{{nginx_port}}/ipa.initramfs"
 ipa_ramdisk_upstream_url: http://tarballs.openstack.org/ironic-python-agent/coreos/files/coreos_production_pxe_image-oem.cpio.gz
 deploy_image_filename: "deployment_image.qcow2"
 deploy_image: "{{http_boot_folder}}/{{deploy_image_filename}}"
@@ -51,9 +58,7 @@ ironic_git_folder: /opt/stack/ironic
 ironicclient_git_folder: /opt/stack/python-ironicclient
 shade_git_folder: /opt/stack/shade
 dib_git_folder: /opt/stack/diskimage-builder
-# Comma-separated list, in the format of a string, of drivers that are enabled.
-enabled_drivers: "agent_ipmitool,pxe_amt,agent_ilo,agent_ucs,agent_amt"
-# enabled_drivers: "agent_ipmitool,agent_amttool,pxe_amt,agent_ilo,agent_ucs,agent_amt"
+enabled_drivers: "agent_ipmitool,agent_ilo,agent_ucs,agent_amt"
 # DHCP pool for requests -- ignored if inventory_dhcp is set to True
 # since IP allocation will be static.
 dhcp_pool_start: 192.168.1.200
@@ -92,3 +97,9 @@ inspector_port_addition: "pxe"
 
 # Note: inspector_keep_ports has three valid values: all, present, added
 inspector_keep_ports: "present"
+
+# This enables installation of substrate for PXE driver support
+enable_pxe_drivers: false
+# Comma-separated list of PXE drivers to enable when
+# enable_pxe_drivers is set to true
+pxe_drivers: "pxe_amt,pxe_ssh,pxe_ipmitool,pxe_ilo"

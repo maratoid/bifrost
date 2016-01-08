@@ -1,4 +1,4 @@
-# Copyright (c) 2015 Hewlett-Packard Development Company, L.P.
+# Copyright (c) 2015 Hewlett Packard Enterprise Development LP.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,6 +12,7 @@
 # implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
----
-- name: "DIB - Install patched library."
-  command: pip install --upgrade --force-reinstall "{{ dib_git_folder }}"
+
+import pbr.version
+
+version_info = pbr.version.VersionInfo('bifrost')
